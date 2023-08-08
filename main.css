@@ -10,12 +10,28 @@ body {
   line-height: 20px;
   padding: 4px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 /* Supplied CSS follows. */
 .header-nav__group{
   display: flex;
+
+  #alerts {
+    background-color: #cf513d;
+  }
 }
+
+@media screen and (max-width: 730px) {
+    #search {
+      display: none;
+    }
+    .boards-label {
+      display: none;
+    }
+  }
 
 .header-nav__button {
   display: inline-flex;
@@ -55,7 +71,7 @@ body {
   opacity: 0.5;
   display: block;
   left: 50%;
-  position: absolute;
+  position: center;
   transform: translateX(-50%);
   top: 5px;
 }
